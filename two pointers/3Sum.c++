@@ -12,9 +12,10 @@ int main(){
     }
     vector<vector<int>> ans;
     sort(nums.begin(),nums.end());
-    // time complexity :- O(n^2)
-    // space complexity :- O(n)
-    for(int i=0;i<n;i++){
+    // time complexity :- O(n^2 + nlogn) -> O(n^2)
+    // space complexity :- O(k)
+    // auxiliary space :- O(1)
+    for(int i=0;i<n-2;i++){
         if(nums[i]>0){
             break;
         }
