@@ -17,7 +17,7 @@ int main()
     // time complexity :- O(n)
     // space complexity :- O(1)
     int totalgas = 0, currentgas = 0, start = 0;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) 
     {
         totalgas += gas[i] - cost[i];
         currentgas += gas[i] - cost[i];
